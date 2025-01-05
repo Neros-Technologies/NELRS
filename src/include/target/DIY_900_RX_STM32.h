@@ -4,6 +4,10 @@
 
 #define TARGET_DIY_900_RX_STM32
 
+#define USE_SX1276_RFO_HF true // disable PA Boost.
+
+#define GPIO_PIN_RX_ENABLE PB3
+
 // GPIO pin definitions
 #define GPIO_PIN_NSS         PA4
 #define GPIO_PIN_MOSI        PA7
@@ -22,7 +26,7 @@
 #define GPIO_PIN_DEBUG_TX    PB10 // USART3
 
 #define GPIO_PIN_LED_GREEN   PC13
-#define GPIO_LED_GREEN_INVERTED 1
+#define GPIO_LED_GREEN_INVERTED 0
 
 // Output Power
 #define MinPower                PWR_10mW
